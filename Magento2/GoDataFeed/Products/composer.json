@@ -1,0 +1,25 @@
+{
+    "name": "godatafeed/godatafeed-product-integration-module",
+    "license": "Apache-2.0",
+    "description": "Official Magento2 Plugin to integrate your products with GoDataFeed",
+    "type": "magento2-module",
+    "autoload": {
+        "files": ["registration.php"],
+        "psr-4": {
+            "GoDataFeed\\Products\\": "",
+            "Magento\\Framework\\": "lib/internal/Magento/Framework/",
+            "Magento\\Setup\\": "setup/src/Magento/Setup/",
+            "Magento\\": "app/code/Magento/"
+        },
+        "autoload-dev": {
+            "psr-4": {
+                "Magento\\Sniffs\\": "dev/tests/static/framework/Magento/Sniffs/",
+                "Magento\\Tools\\": "dev/tools/Magento/Tools/",
+                "Magento\\Tools\\Sanity\\": "dev/build/publication/sanity/Magento/Tools/Sanity/",
+                "Magento\\TestFramework\\Inspection\\": "dev/tests/static/framework/Magento/TestFramework/Inspection/",
+                "Magento\\TestFramework\\Utility\\": "dev/tests/static/framework/Magento/TestFramework/Utility/"
+            }
+        }
+
+    }
+}

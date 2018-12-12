@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+        bootstrap="../../../../vendor/autoload.php"
+         colors="true"
+         verbose="true"
+         stopOnFailure="false">
+    <testsuites>
+        <testsuite name="Test suite">
+            <directory>Test</directory>
+        </testsuite>
+    </testsuites>
+    <logging>
+        <log type="coverage-html" target="/tmp/report" lowUpperBound="35"
+             highLowerBound="70"/>
+        <log type="coverage-clover" target="/tmp/coverage.xml"/>
+        <log type="coverage-php" target="/tmp/coverage.serialized"/>
+        <log type="coverage-text" target="php://stdout" showUncoveredFiles="false"/>
+        <log type="junit" target="Test/logs/logfile.xml"/>
+        <log type="testdox-html" target="Test/logs/testdox.html"/>
+        <log type="testdox-text" target="Test/logs/testdox.txt"/>
+    </logging>
+</phpunit>
